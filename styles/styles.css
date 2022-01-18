@@ -75,6 +75,10 @@
       font-size: 18px;
       color: hsl(215, 51%, 70%);
     }
+    div.containerAvatarImage{
+      border-radius: 50%;
+      border: 1.9px solid white;
+    }
     img.avatar{
       width: 40px;
       vertical-align: middle;
