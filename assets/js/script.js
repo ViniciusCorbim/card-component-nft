@@ -19,7 +19,7 @@ const main = document.getElementsByTagName("main")[0];
 
 const imageModal = createElement("figure", "image-modal");
 const close = createElement("span", "image-modal-close", "&times;");
-const img01 = createElement("img", "image-modal-content", "");
+const img01 = createElement("img", "image-modal-content");
 const caption = createElement("figcaption", "image-modal-caption");
 
 imageModal.appendChild(close);
