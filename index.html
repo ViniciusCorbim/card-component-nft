@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-  <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"/>
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="equilibrium">
+        <figure id="image-equilibrium">
+          <img src="./assets/images/image-equilibrium.jpg" alt="image-equilibrium"/>
+          <div class="background-equilibrium">
+            <!--Imagem Adicionada por CSS-->
+          </div>
+        </figure>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-<body>
+        <article>
+          <h1>Equilibrium #3429</h1>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
 
-  <main>
-      <section>
-
-            <div class="background-equilibrium">
-                <img src="images/icon-view.svg" alt="View">
-           </div>
-        <img class="equilibrium" src="images/image-equilibrium.jpg" alt="Image Equilibrium">
-        <h1 class="equilibrium">Equilibrium #3429</h1>
-        <p class="equilibrium">Our Equilibrium collection promotes balance and calm.</p>
-        <div class="container">
-            <div class="ethereum">
-                <img class="ethereum" src="images/icon-ethereum.svg" alt="icon-ethereum">
-                <span class="ethereum">0.041 ETH</span>
+          <section class="ethereum row">
+            <div class="row">
+              <img src="./assets/images/icon-ethereum.svg"alt="icon-ethereum"/>
+              <span class="icon-ethereum">0.041 ETH</span>
             </div>
-            <div class="clock">
-               <img src="images/icon-clock.svg" alt="icon-clock">
-               <span class="clock">3 days left</span>
+            <div class="row">
+              <img src="./assets/images/icon-clock.svg" alt="icon-clock"/>
+              <span>3 days left</span>
             </div>
-        </div>
-
-        <div class="wyvern">
-          <div class="containerAvatarImage"><img class="avatar" src="images/image-avatar.png" alt="Image Avatar"></div>
-           <p  class="wyvern"><strong class="wyvern">Creation of</strong> <span class="wyvern">Jules Wyvern</span></p>
-        </div>
+          </section>
+          
+          <section class="avatar row">
+            <img src="./assets/images/image-avatar.png" alt="image-avatar"/>
+            <p>Creation of <span>Jules Wyvern</span></p>
+          </section>
+        </article>
       </section>
-  </main>
+    </main>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/ViniciusCorbim" target="_blank">Vinicius Corbim</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/ViniciusCorbim" target="_blank">Vinicius Corbim</a>.
+      </p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

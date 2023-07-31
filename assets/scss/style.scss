@@ -1,0 +1,146 @@
+@import "variables";
+@import "modal";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body{
+  background-color: $color-primary;
+  font-family: $font-family;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main{
+  background-color: $color-secondary;
+  width: 90vw;
+  max-width: 350px;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+
+  section.equilibrium{
+    figure {
+      position: relative;
+      
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      div.background-equilibrium{
+        width: calc(90vw - 40px);
+        max-width: 310px;
+        height: calc(90vw - 40px);
+        max-height: 310px;
+
+        border-radius: 10px;
+        transition: opacity .5s;
+        opacity: 0;
+
+        background-color: fade-out($color: $color-quaternary, $amount: 0.5);
+        background-image: url(../images/icon-view.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        position: absolute;
+        top: 0%;
+      }
+
+      @media screen and (hover: hover) {
+        &:hover div.background-equilibrium{
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+    
+    article{
+      h1{
+        color: $color-white;
+        font-size: $font-h1;
+        margin: 20px 0;
+
+        @media screen and (hover: hover) {
+          &:hover {
+            cursor: pointer;
+            color: $color-quaternary;
+          }
+        }
+      }
+
+      p, span{
+        color: $color-tertiary;
+      }
+
+      .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+      }
+
+      section.ethereum{
+        margin: 20px 0;
+        font-weight: 300;
+
+        span.icon-ethereum{
+          color: $color-quaternary;
+        }
+      }
+
+      section.avatar{
+        max-width: 250px;
+
+        img{
+          width: 50px;
+          border-radius: 50%;
+          border: solid 1px $color-white;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.603);
+        }
+
+        span{
+          color: $color-white;
+
+          @media screen and (hover: hover) {
+            &:hover {
+              cursor: pointer;
+              color: $color-quaternary;
+            }
+          }
+        }
+      }
+
+    }//article
+
+  }//equilibrium
+
+}//main
+
+
+footer{
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: white;
+
+  p.attribution{
+    font-size: 16px; 
+    align-self: flex-end;
+
+    a{
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
