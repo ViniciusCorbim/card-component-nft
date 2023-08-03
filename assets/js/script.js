@@ -10,8 +10,8 @@
 
 function createElement(element, classList=false, content=false) {
     x = document.createElement(element);
-    if (classList) { x.classList.add(classList); }
-    if (content) { x.innerHTML = content; }
+    if (classList) x.classList.add(classList);
+    if (content)   x.innerHTML = content;
     return x;
 }
 
@@ -30,7 +30,7 @@ imageModal.appendChild(caption);
 
 
 
-//-------Define uma Janela Moda para Imagens-------\\
+//-------Define uma Janela Modal para Imagens-------\\
 
 const figureImageEquilibrium = document.getElementById("image-equilibrium");
 
@@ -50,4 +50,4 @@ close.onclick = function(){
     main.removeChild(imageModal);
 }
 
-//-------Define uma Janela Moda para Imagens-------\\
+//-------Define uma Janela Modal para Imagens-------\\
