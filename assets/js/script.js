@@ -1,18 +1,18 @@
 //-------Cria a Estrutura da Janela Modal para Imagens-------\\
 
 /*
-<figure class="image-modal" style="display: grid;">
+<figure class="image-modal">
     <span class="image-modal-close">&times;</span>
     <img class="image-modal-content">
     <figcaption class="image-modal-caption"></figcaption>
 </figure>
 */
 
-function createElement(element, classList=false, content=false) {
-    x = document.createElement(element);
-    if (classList) x.classList.add(classList);
-    if (content)   x.innerHTML = content;
-    return x;
+function createElement(element, classList = false, content = false) {
+  x = document.createElement(element);
+  if (classList) x.classList.add(classList);
+  if (content) x.innerHTML = content;
+  return x;
 }
 
 const main = document.getElementsByTagName("main")[0];
@@ -28,26 +28,25 @@ imageModal.appendChild(caption);
 
 //-------Cria a Estrutura da Janela Modal para Imagens-------\\
 
-
-
 //-------Define uma Janela Modal para Imagens-------\\
 
 const figureImageEquilibrium = document.getElementById("image-equilibrium");
 
-figureImageEquilibrium.onclick = function(){
-    main.appendChild(imageModal);
-    configImageModal("./assets/images/image-equilibrium.jpg", "Equilibrium #3429");
+figureImageEquilibrium.onclick = function () {
+  main.appendChild(imageModal);
+  configImageModal(
+    "./assets/images/image-equilibrium.jpg",
+    "Equilibrium #3429"
+  );
+};
+
+function configImageModal(img, figcaption = "") {
+  img01.src = img;
+  caption.innerHTML = figcaption;
 }
 
-
-function configImageModal(img, figcaption="") {
-    imageModal.style = "display: grid;";
-    img01.src = img;
-    caption.innerHTML = figcaption;
-}
-
-close.onclick = function(){
-    main.removeChild(imageModal);
-}
+close.onclick = function () {
+  main.removeChild(imageModal);
+};
 
 //-------Define uma Janela Modal para Imagens-------\\
