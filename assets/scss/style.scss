@@ -1,7 +1,7 @@
 @import "variables";
 @import "modal";
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,8 +10,8 @@
   vertical-align: baseline;
 }
 
-body{
-  background-color: $color-primary;
+body {
+  background-color: $color1;
   font-family: $font-family;
 
   min-height: 100vh;
@@ -20,8 +20,8 @@ body{
   justify-content: center;
 }
 
-main{
-  background-color: $color-secondary;
+main {
+  background-color: $color2;
   width: 90vw;
   max-width: 350px;
   padding: 20px;
@@ -29,27 +29,27 @@ main{
   border-radius: 10px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
 
-  section.equilibrium{
+  section.equilibrium {
     figure {
       position: relative;
-      
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         border-radius: 10px;
       }
 
-      div.background-equilibrium{
+      div.background-equilibrium {
         width: calc(90vw - 40px);
         max-width: 310px;
         height: calc(90vw - 40px);
         max-height: 310px;
 
         border-radius: 10px;
-        transition: opacity .5s;
+        transition: opacity 0.5s;
         opacity: 0;
 
-        background-color: fade-out($color: $color-quaternary, $amount: 0.5);
+        background-color: fade-out($color: $color4, $amount: 0.5);
         background-image: url(../images/icon-view.svg);
         background-repeat: no-repeat;
         background-position: center center;
@@ -59,15 +59,15 @@ main{
       }
 
       @media screen and (hover: hover) {
-        &:hover div.background-equilibrium{
+        &:hover div.background-equilibrium {
           opacity: 1;
           cursor: pointer;
         }
       }
     }
-    
-    article{
-      h1{
+
+    article {
+      h1 {
         color: $color-white;
         font-size: $font-h1;
         margin: 20px 0;
@@ -75,16 +75,17 @@ main{
         @media screen and (hover: hover) {
           &:hover {
             cursor: pointer;
-            color: $color-quaternary;
+            color: $color4;
           }
         }
       }
 
-      p, span{
-        color: $color-tertiary;
+      p,
+      span {
+        color: $color3;
       }
 
-      .row{
+      .row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -92,54 +93,52 @@ main{
         gap: 5px;
       }
 
-      section.ethereum{
-        margin: 20px 0;
+      section.ethereum {
+        padding: 20px 0;
+        border-bottom: solid 1px $color3;
         font-weight: 300;
 
-        span.icon-ethereum{
-          color: $color-quaternary;
+        span.icon-ethereum {
+          color: $color4;
         }
       }
 
-      section.avatar{
+      section.avatar {
         max-width: 250px;
+        margin-top: 20px;
 
-        img{
+        img {
           width: 50px;
           border-radius: 50%;
           border: solid 1px $color-white;
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.603);
         }
 
-        span{
+        span {
           color: $color-white;
 
           @media screen and (hover: hover) {
             &:hover {
               cursor: pointer;
-              color: $color-quaternary;
+              color: $color4;
             }
           }
         }
       }
+    } //article
+  } //equilibrium
+} //main
 
-    }//article
-
-  }//equilibrium
-
-}//main
-
-
-footer{
+footer {
   text-align: center;
   margin: 0 0 20px 0;
   color: white;
 
-  p.attribution{
-    font-size: 16px; 
+  p.attribution {
+    font-size: 16px;
     align-self: flex-end;
 
-    a{
+    a {
       color: hsl(228, 45%, 44%);
     }
   }
