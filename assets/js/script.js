@@ -1,4 +1,4 @@
-//-------Cria a Estrutura da Janela Modal para Imagens-------\\
+//-------Create Modal Window Structure for Images-------\\
 
 /*
 <figure class="image-modal">
@@ -26,9 +26,9 @@ imageModal.appendChild(close);
 imageModal.appendChild(img01);
 imageModal.appendChild(caption);
 
-//-------Cria a Estrutura da Janela Modal para Imagens-------\\
+//-------Create Modal Window Structure for Images-------\\
 
-//-------Define uma Janela Modal para Imagens-------\\
+//-------Define a Modal Window for Images-------\\
 
 const figureImageEquilibrium = document.getElementById("image-equilibrium");
 
@@ -49,4 +49,4 @@ close.onclick = function () {
   main.removeChild(imageModal);
 };
 
-//-------Define uma Janela Modal para Imagens-------\\
+//-------Define a Modal Window for Images-------\\
